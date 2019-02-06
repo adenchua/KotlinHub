@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Kotlin Hub</string>
+    <string name="kotlin_hub">Kotlin Tutor</string>
+    <string name="btn_get_started">Get Started</string>
+    <string name="title_main_menu">Kotlin Hub</string>
+    <string name="btn_home">Home</string>
+    <string name="btn_donate">Donate</string>
+    <string name="btn_game">Game</string>
+    <string name="module1">Introduction to Kotlin</string>
+    <string name="module2">Variables</string>
+    <string name="module3">Control Flow</string>
+    <string name="module4">Functions and Lambdas</string>
+    <string name="module5">Classes and Objects</string>
+    <string name="main_menu_kotlin_title">Start Learning Kotlin</string>
+    <string name="btn_startnow">Start Now</string>
+    <string name="tv_descriptiontitle">Description</string>
+    <string name="why_study_kotlin">Why Study Kotlin?</string>
+    <string name="tool_friendly_tooltip">Choose any Java IDE or build from the command line.</string>
+    <string name="interoperable_tooltip">Leverage existing libraries for the JVM, Android, and the browser.</string>
+    <string name="safe_tooltip">Avoid entire classes of errors such as null pointer exceptions.</string>
+    <string name="concise_tooltip">Drastically reduce the amount of boilerplate code.</string>
+    <string name="kotlin_evolution">Evolution Of Kotlin</string>
+    <string name="about_us">About Us</string>
+    <string name="btn_letsreview">Let\'s Review</string>
+    <string name="tv_introductiontokotlin">Introduction to Kotlin</string>
+    <string name="tv_variables">Variables</string>
+    <string name="tv_controlFlow">Control Flow</string>
+    <string name="tv_functions">Functions and Lambdas</string>
+    <string name="tv_classes">Classes and Objects</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

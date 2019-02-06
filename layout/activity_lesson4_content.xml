@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_main_activity"
+    tools:context=".Lesson4Content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#c9312e"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Backtohome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/left_arrow"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/tv_functionsandlambdas_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="left|center_vertical"
+            android:text="@string/tv_functions"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_kotlin_functions"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/apple"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Kotlin Functions"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:id="@+id/card_expanded_kotlinfunctions"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_kotlin_functions_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_types_of_functions"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bananas"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Types of Functions"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:id="@+id/card_expanded_types_of_functions"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_types_of_functions_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_kotlin_standard_library_function"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/cupcake"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Kotlin Standard Library Function"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:id="@+id/card_expanded_kotlin_standard_library_function"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_kotlin_standard_library_function_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:background="@drawable/code_kotlin_standard_library_function_1"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_kotlin_standard_library_function_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:background="@drawable/code_kotlin_standard_library_function_2"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_user_defined_functions"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/donut"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="User-defined Functions"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:id="@+id/card_expanded_user_defined_functions"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_user_defined_functions_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+
+                        <TextView
+                            android:id="@+id/tv_user_defined_functions_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:background="@drawable/code_user_defined_functions_1"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_user_defined_functions_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_how_to_call_a_function"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/eclair"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="How to call a function"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:id="@+id/card_expanded_how_to_call_a_function"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_how_to_call_a_function_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/code_how_to_call_a_function_1"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_to_call_a_function_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="180dp"
+                                android:background="@drawable/code_how_to_call_a_function_2"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:id="@+id/tv_how_to_call_a_function_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="160dp"
+                                android:background="@drawable/code_how_to_call_a_function_3"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_to_call_a_function_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:background="@drawable/code_how_to_call_a_function_4"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_to_call_a_function_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:id="@+id/tv_how_to_call_a_function_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp"
+                                android:background="@drawable/code_how_to_call_a_function_5"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_to_call_a_function_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/code_how_to_call_a_function_6"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_how_functions_work"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/froyo"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="How functions work"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:id="@+id/card_expanded_how_functions_work"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_how_functions_work_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/code_how_functions_work_1"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_functions_work_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="180dp"
+                                android:background="@drawable/code_how_functions_work_2"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_functions_work_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/code_how_functions_work_3"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_functions_work_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="180dp"
+                                android:background="@drawable/code_how_functions_work_4"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_functions_work_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:background="@drawable/code_how_functions_work_5"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_functions_work_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:id="@+id/tv_how_functions_work_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="110dp"
+                                android:background="@drawable/code_how_functions_work_6"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_functions_work_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/code_how_functions_work_7"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_functions_work_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:background="@drawable/code_how_functions_work_8"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_how_functions_work_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:background="@drawable/code_how_functions_work_9"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv_lambda_expressions"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/gingerbreadman"
+                            android:padding="10dp" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Lambda Expressions"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                    <LinearLayout
+                            android:id="@+id/card_expanded_lambda_expressions"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/tv_lambda_expressions_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:background="@drawable/code_lambda_expressions_1"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                                android:id="@+id/tv_lambda_expressions_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:background="@drawable/code_lambda_expressions_2"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                                android:id="@+id/tv_lambda_expressions_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:background="@drawable/code_lambda_expressions_3"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btn_letsreview_introductiontokotlin"
+                android:layout_width="340dp"
+                android:background="#c9312e"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/btn_letsreview"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

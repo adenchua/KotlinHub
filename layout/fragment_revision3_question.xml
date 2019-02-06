@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#333333"
+             tools:context=".Revision3">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_revision3_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="Question Title"
+                android:textColor="@android:color/white"
+                android:textSize="24dp" />
+
+        <TextView
+                android:id="@+id/tv_revision3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:padding="20dp"
+                android:text="Fragment1"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+        <ImageView
+                android:id="@+id/iv_revision3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5.5"/>
+        <TextView
+                android:id="@+id/tv_revision3_result"
+                android:textSize="24sp"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/lesson3_button1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/rounded_button_google_blue"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:text="A" />
+
+            <Button
+                    android:id="@+id/lesson3_button2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/rounded_button_google_red"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:text="B" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/lesson3_button3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/rounded_button_google_yellow"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:text="C" />
+
+            <Button
+                    android:id="@+id/lesson3_button4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/rounded_button_google_green"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:text="D" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

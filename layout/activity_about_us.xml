@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background_main_activity"
+              android:orientation="vertical"
+              tools:context=".AboutUsActivity">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:text="@string/about_us"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/cv_about_kotlin_hub"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="64dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/kotlin_hub_logo"
+                                android:padding="10dp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="About Kotlin Hub"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/lightgray" />
+
+                        <TextView
+                                android:id="@+id/tv_about_us_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/cv_team"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="64dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/kotlin_hub_logo"
+                                android:padding="10dp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="The Team"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/lightgray" />
+
+                        <!-- Prof Ng's profile -->
+                        <ImageView
+                                android:layout_width="128dp"
+                                android:layout_height="128dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/profng"
+                                android:padding="10dp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="A.Professor Ng Teck Khim"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:id="@+id/tv_prof_ng"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text=""
+                                android:textStyle="italic" />
+
+                        <!-- You Liang's profile -->
+                        <ImageView
+                                android:layout_width="128dp"
+                                android:layout_height="128dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/ylround"
+                                android:padding="10dp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Chua You Liang"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:id="@+id/tv_you_liang"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text=""
+                                android:textStyle="italic" />
+
+                        <!-- Yosafat's profile -->
+                        <ImageView
+                                android:layout_width="128dp"
+                                android:layout_height="128dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/yosafatround"
+                                android:padding="10dp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Yosafat Chandra Saputra"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                                android:id="@+id/tv_yosafat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text=""
+                                android:textStyle="italic" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <!--Acknowledgements-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                        android:id="@+id/cv_acknowledgements"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:layout_width="65dp"
+                                android:layout_height="64dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/kotlin_hub_logo"
+                                android:padding="10dp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Acknowledgements"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/lightgray" />
+
+                        <TextView
+                                android:id="@+id/tv_acknowledgments"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text=""
+                                android:textStyle="italic" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

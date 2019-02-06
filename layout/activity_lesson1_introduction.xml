@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 tools:context=".Lesson1Introduction"
+                                                 android:background="#fcfcfc">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingtoolbar"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:layout_scrollFlags="exitUntilCollapsed|scroll"
+                app:contentScrim="?attr/colorPrimary"
+                app:title="Introduction to Kotlin"
+                app:expandedTitleMarginStart="48dp"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:background="@drawable/card_introtokotlin_test">
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbarid"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:layout_collapseMode="pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/background_main_activity">
+            <TextView
+                    android:id="@+id/tv_Descriptiontitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_dark"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20sp"
+                    android:text="@string/tv_descriptiontitle"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="10sp"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:text="Completion:"/>
+
+            <ProgressBar
+                    android:id="@+id/pb_completion"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="0"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp"/>
+
+            <TextView
+                    android:id="@+id/tv_completion"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:text="0%"/>
+
+            <TextView
+                    android:id="@+id/tv_Descriptiondetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="12"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:scrollbars="vertical"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom|center_horizontal">
+        <Button
+                android:id="@+id/btn_Startnow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_dark"
+                android:layout_margin="15dp"
+                android:text="@string/btn_startnow"/>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

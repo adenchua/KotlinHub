@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_main_activity"
+    tools:context=".Lesson5Content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#b95acc"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Backtohome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/left_arrow"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/tv_Introductiontokotlin_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="left|center_vertical"
+            android:text="@string/tv_classes"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_kotlin_class_and_objects"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/apple"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Kotlin Class and Objects"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:id="@+id/card_expanded_kotlin_class_and_objects"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_kotlin_class_and_objects_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_oop"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bananas"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Object-oriented Programming (OOP)"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:id="@+id/card_expanded_oop"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_oop_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv_kotlin_class"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/cupcake"
+                            android:padding="10dp" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Kotlin Class"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                    <LinearLayout
+                            android:id="@+id/card_expanded_kotlin_class"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/tv_kotlin_class_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/lightgray" />
+
+                        <TextView
+                                android:id="@+id/tv_kotlin_class_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:background="@drawable/code_kotlin_class_1"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                                android:id="@+id/tv_kotlin_class_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp"
+                                android:background="@drawable/code_kotlin_class_2"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                                android:id="@+id/tv_kotlin_class_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv_kotlin_objects"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="6dp">
+
+                <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/donut"
+                            android:padding="10dp" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Kotlin Objects"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                    <LinearLayout
+                            android:id="@+id/card_expanded_kotlin_objects"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/tv_kotlin_objects_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="320dp"
+                                android:background="@drawable/code_kotlin_objects_1"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                                android:id="@+id/tv_kotlin_objects_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/lightgray" />
+
+                        <TextView
+                                android:id="@+id/tv_kotlin_objects_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:background="@drawable/code_kotlin_objects_2"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                                android:id="@+id/tv_kotlin_objects_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:background="@drawable/code_kotlin_objects_3"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="10dp" />
+
+                        <TextView
+                                android:id="@+id/tv_kotlin_objects_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btn_letsreview_introductiontokotlin"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:background="#b95acc"
+                android:textColor="#FFFFFF"
+                android:layout_margin="15dp"
+                android:text="@string/btn_letsreview"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
